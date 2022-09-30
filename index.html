@@ -69,21 +69,37 @@ h3 {
   background-color: #ddd;
   color: black;
 }
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+}
 </style>
 </head>
 <body>
   <div class="topnav">
   <a href="page2.html">1st Post</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
-<div>
-  <h1>Trying New Things!</h1>
+  <a href="page2">Link</a>
+  <a href="page2">Link</a>
 </div>
 
-<div>
-<h2>Where we were...</h2>
-<p>This is a picture of my family the morning I left for my last deployment to Iraq in early 2017.  My wife and two youngest children are the most important people in my life.</p>
+<div class="header">
+<h1>Trying New Things!</h1>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Where we were...</h2>
+    <p>This is a picture of my family the morning I left for my last deployment to Iraq in early 2017.  My wife and two youngest children are the most important people in my life.</p>
 <img src="images/Iraq1.jpg" alt="Hector & Family, 2017"</img src>
 <p>My wife graduated from culinary school in 1999, a month before our wedding.  I was serving on active duty in the US Army and she put her career on hold to follow me around.  She supported my career development and growth for the next 20 years until I retired in 2019.  In 2015 she started her first blog, then rebranded herself and began <a href="https://senseandedibility.com/">Sense & Edibility</a></p>
 </div>
