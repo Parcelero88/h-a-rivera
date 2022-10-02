@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TryingNewThings</title>
+<title>CSS Website Layout</title>
 <meta charset="utf-8">
-<meta name:="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
 .header {
-  color: White;
-  padding: 10px;
+  background-color: #f1f1f1;
+  padding: 20px;
   text-align: center;
 }
 .topnav {
-  overflow:hidden;
-  background-color: SlateGray;
+  overflow: hidden;
+  background-color: #333;
 }
 .topnav a {
   float: left;
@@ -26,93 +32,56 @@
   background-color: #ddd;
   color: black;
 }
+.column {
+  float: left;
+  padding: 10px;
+}
 .column.side {
-    width: 20%
-  }
+  width: 25%;
+}
 .column.middle {
-    width: 60%
-  }
+  width: 50%;
+}
 .row:after {
-    content:"";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-@media screen and (max-width:600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-}
-body {
-  font-family: Arial, sans-serif;
-  background-image: url("https://user-images.githubusercontent.com/112039559/193478984-cd0edfcc-bdb2-452b-afc2-ed97f62b6065.jpg"); margin: auto;
-}
-
-img {
-  max-width: auto; height: auto;
-  margin: auto;
-}
-
-div {
-  width: 1500px;
-  border: 5px solid black;
-  padding: 15px;
-  margin: auto;
-}
-p {
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-  margin-left: 2.5px;
-  margin-left: 2.5px;
-  background-color: White;
-  opacity: 50%;
-}
-h1 {
-  background-color:Gray;
-  text-align:center;
-}
-h2 {
-  background-color:Gray;
-  text-align:center;
-}
-h3 {
-  background-color:Gray;
-  text-align:center;
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
 }
 </style>
 </head>
 <body>
-  <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="page2.html">1st Post</a>
-  <a href="">Coming Soon!</a>
-</div>
 
 <div class="header">
-<h1>Trying New Things!</h1>
+  <h1>Header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
 </div>
 
 <div class="row">
   <div class="column side">
-    <h3>Left Side</h2>
-    <p>Future "Topic" Navigation Menu</p>
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div>
+
   <div class="column middle">
-    <h2>Where we were.</h2>
-    <p>This is a picture of my family the morning I left for my last deployment to Iraq in early 2017.  My wife and two youngest children are the most important people in my life.</p>
-    <img src="images/Iraq1.jpg" alt="Hector & Family, 2017"</img src>
-    <p>My wife graduated from culinary school in 1999, a month before our wedding.  I was serving on active duty in the US Army and she put her career on hold to follow me around.  She supported my career development and growth for the next 20 years until I retired in 2019.  In 2015 she started her first blog, then rebranded herself and began <a href="https://senseandedibility.com/">Sense & Edibility</a></p>
-
-    <h2>Our unknown.</h2>
-    <img src="images/SATX.jpg" alt="Our first weekend in San Antonio"</img src>
-    <p>My wife and I decided we would relocate to San Antonio from Fort Hood, TX.  We both loved the city and had many friends who lived there.  I was hired by a local company and, after unpacking some of our things into our apartment and stuffing the rest into a storage unit, we began exploring our new location.  Part of our "exploration" included finding a place to build our forever home.  We really did not know what to expect, but managed to find a great lot and moved into our last house April of 2021, 23-months after arriving.</p>
-
-    <h2>Where we are now.</h2>
-    <img src="images/Family1.jpg" alt="Hector & Family, 2022"</img src>
-    <p>My wife's blog has grown exponentially.  She continues to build her online cookbook and is loving it.  Our 17-year-old twins are first-year students at UTSA.  My son is pursuing a degree in electrical engineering and my daughter in biochemistry. They are our legacy and my wife and I have worked hard with the focus to give them the springboard into adulthood neither one of us had.  When most parents are becoming empty nesters, we continue to remain engaged in their lives, hoping to provide sound guidance and help them avoid the pitfalls we fell into.  I am pursuinig an Associates in Applied Sciences in Digital Media and will join my wife's team and with the hope to help grow her company further</p>
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
   </div>
-  <div class:"columnside">
-    <h3>Right Side</h3>
-    <p>Future Advertisement Space</p>
+
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
   </div>
 </div>
 
