@@ -5,6 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
 body {
   margin: auto;
   background-image: url("https://user-images.githubusercontent.com/112039559/193478984-cd0edfcc-bdb2-452b-afc2-ed97f62b6065.jpg");
@@ -26,7 +29,8 @@ div {
   overflow: hidden;
   background-color: black;
   font-weight: bold;
-  border: 5px black;
+  margin: auto;
+  position: sticky;
 }
 .topnav a {
   float: left;
@@ -48,8 +52,8 @@ div {
   width: 20%;
 }
 .column.middle {
-  float; left
-  width: 80%;
+  float: left;
+  width: 60%;
 }
 .row:after {
   content: "";
@@ -60,6 +64,17 @@ div {
   .column.side, .column.middle {
     width: 100%;
   }
+}
+.footer{
+  background-color: SlateGray;
+  text-align: right;
+  padding: 10px;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
 }
 p {
   background-color: White;
@@ -77,17 +92,19 @@ h3 {
   background-color: Slategray;
 }
 img {
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: 50%;
+  image-align: center;
 }
 </style>
 </head>
 <body>
-
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="page2.html">1st post</a>
-  <a href="page3.html">Test</a>
+<div class="sticky">
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="page2.html">1st post</a>
+    <a href="page3.html">Test</a>
+  </div>
 </div>
 
 <div class="header">
