@@ -11,11 +11,11 @@
   <div id="results"></div>
   <a href="/">Back to Form</a>
   <script>
-  const resultslist = document.getlelementbyid('results')
-  new URLSearchParams (window.location.search).forEach((value, name) => {
+    const resultslist = document.getlelementbyid('results')
+    new URLSearchParams (window.location.search).forEach((value, name) => {
       resultslist.append(`${name}: ${value}`)
       resultslist.append(document.createelement<'br'))
-  })
+    })
   </script>
 </body>
-</html>  
+</html>
