@@ -1,39 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-<title>Trying New Things</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trying New Things</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: auto;
-  background-image: url("https://user-images.githubusercontent.com/112039559/193478984-cd0edfcc-bdb2-452b-afc2-ed97f62b6065.jpg");
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-div {
-  width: 1500px;
-  border: 5px black;
-  padding: 15px;
-  margin: auto;
-}
+	* {box-sizing: border-box;}
+	body {margin: 0;
+  	background-image: url("images/beach_trimmed.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	font-family:Arial;
+  	font-size: 16px;}
+	div {width: auto; border: 5px #000000; padding: 5px}
 .header {
-  background-color: SlateGray;
-  padding: 20px;
-  text-align: center;
-}
-.topnav {
-  overflow: hidden;
-  background-color: black;
-  font-weight: bold;
-  margin: auto;
-  position: sticky;
-}
+	text-align: center;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;}
+.topnav {overflow: hidden;
+	background-color: #000000;
+	margin: auto;
+	position: sticky;}
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: Gray;
   text-align: center;
@@ -48,84 +40,139 @@ div {
   background-color: SlateGray;
   color: black;
 }
-.column.side {
-  float: left;
-  width: 20%;
+.row {
+  display: -webkit-flex;
+  display: flex;
 }
-.column.middle {
-  float: left;
-  width: 60%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: auto;
+  width: 600px
+  background-color: white;
+  font-size: 60px;
+	}
+@media screen and (max-width : 1157px ){
   .column.side, .column.middle {
     width: 100%;
-  }
+}
 }
 .footer{
-  background-color: SlateGray;
   text-align: right;
   padding: 5px;
+  color: #FF0004;
 }
+.box {
+    margin-bottom: 10px;
+    padding: 0 0 15px;
+    width: 250px;
+	background-color: white;
+    font-size: 60px;
+ }
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 5px;
+  font-family: Arial;
 }
 p {
-  background-color: White;
+  font-family: Arial;
+  background-color: white;
+  padding: 5px;
 }
 h1 {
-  font-size: 36px;
-  background-color: Slategray;
+  font-size: 75px;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
 h2 {
   font-size: 30px;
   background-color: Slategray;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
 h3 {
   font-size: 24px;
-  background-color: Slategray;
+  background-color: black;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
-img {
-  height: 50%;
-  width: 50%;
-  image-align: center;
-}
+.image {align: center;
+	}
+#resources {
+	border-collapse: collapse;
+	width: 60%;
+	align: left;
+	margin-left: 40px;
+	background-color: white;
+	font-family: Arial
+		}
+#resources td, #resources th {
+  border: 1px solid #000000;
+  padding: 8px;
+	}
+#resources th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  background-color: #FFFFFF;
 </style>
 </head>
-<body>
-<div>
 
+<body>
 <div class="sticky">
   <div class="topnav">
     <a href="index.html">Home</a>
-    <a href="page2.html">1st post</a>
-    <a href="page3.html">Coming Soon</a>
+    <a href="page2.html">About Us...</a>
+	<a href="page4.html">Resources</a>
+	<a href="page5.html">Contact us!</a>
+    <a href="page3.html">The Blog...</a>
   </div>
 </div>
 
 <div class="header">
-  <h1>Trying New Things!</h1>
+  <h1><em>Resources!</em></h1>
 </div>
-
-<div class="row">
-  <div class="column side">
-    <h2>Left Side</h2>
-    <p>Future navigate by topic menu.</p>
-  </div>
-
-  <div class="column middle">
-    <h2>STAY TUNED FOR MORE ANTICS!</h2>
-  </div>
+<blockquote>
+  <h2><strong><em>Free Transition Resources</em></strong></h2>
+</blockquote>
+<blockquote>
+  <p>Here's a list of agencies and organizations dedicated to heloing you make sense of your transition.  While not comprehensive, you will find that conecting with one will help you start bridging to others!</p>
+</blockquote>
+<table id="resources">
+  <tr>
+    <th>Organization</th>
+    <th>Web Address</th>
+  </tr>
+  <tr>
+    <td>DoD Transition Assistance Program</td>
+    <td><a href="https://www.dodtap.mil/dodtap/app/home">DoD-TAP</a></td>
+  </tr>
+	<tr>
+    <td>VA Disability Compensation</td>
+    <td><a href="https://www.va.gov/disability/">VA.gov</a></td>
+  </tr>
+  <tr>
+    <td>American Corporate Patners</td>
+    <td><a href="https://www.acp-usa.org/">acp-usa.org</a></td>
+  </tr>
+  <tr>
+    <td>Hire Heroes USA</td>
+    <td><a href="https://www.hireheroesusa.org/job-seekers/">hireheroesusa.org</a></td>
+  </tr>
+    <td>Veterati</td>
+    <td><a href="https://www.veterati.com/">veterati.com</a></td>
+  <tr>
+    <td>Hire Our Heroes</td>
+    <td><a href="https://hireourheroes.org/">hireourheroes.org</a></td>
+	</tr>
+  <tr>
+    <td>Texas Workforce Commission</td>
+	  <td><a href="https://www.twc.texas.gov/">twc.texas.gov</a></td>
+	</tr>
+	</table>
+<div class="footer">
+  <h3>&copy Hector A. Rivera</h3>
 </div>
 </body>
-<div class="footer">
-  <p style= "background-color: SlateGray">&copy Hector A. Rivera</p>
-</div>
 </html>
