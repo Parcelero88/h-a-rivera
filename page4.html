@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trying New Things</title>
+<style>
+	* {box-sizing: border-box;}
+	body {margin: 0;
+  	background-image: url("images/beach_trimmed.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	font-family:Arial;
+  	font-size: 16px;}
+	div {width: auto; border: 5px #000000; padding: 5px}
+.header {
+	text-align: center;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;}
+.topnav {overflow: hidden;
+	background-color: #000000;
+	margin: auto;
+	position: sticky;}
+.topnav a {
+  float: right;
+  display: block;
+  color: Gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: SlateGray;
+  color: black;
+}
+.topnav a:hover:not(.active) {
+  background-color: SlateGray;
+  color: black;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: auto;
+  width: 600px
+  background-color: white;
+  font-size: 60px;
+	}
+@media screen and (max-width : 1157px ){
+  .column.side, .column.middle {
+    width: 100%;
+}
+}
+.footer{
+  text-align: right;
+  padding: 5px;
+  color: #FF0004;
+}
+.box {
+    margin-bottom: 10px;
+    padding: 0 0 15px;
+    width: 250px;
+	background-color: white;
+    font-size: 60px;
+ }
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-family: Arial;
+}
+p {
+  font-family: Arial;
+  background-color: white;
+  padding: 5px;
+}
+h1 {
+  font-size: 75px;
+  font-family: "Script MT Bold", Papyrus, Parchment;
+}
+h2 {
+  font-size: 30px;
+  background-color: Slategray;
+  font-family: "Script MT Bold", Papyrus, Parchment;
+}
+h3 {
+  font-size: 24px;
+  background-color: black;
+  font-family: "Script MT Bold", Papyrus, Parchment;
+}
+.image {align: center;
+	}
+#addresses {
+	border-collapse: collapse;
+	width: 60%;
+	align: left;
+	margin-left: 40px;
+	background-color: white;
+	font-family: Arial
+		}
+#addresses td, #addresses th {
+  border: 1px solid #000000;
+  padding: 8px;
+	}
+#addresses th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: left;
+  background-color: #FFFFFF;
+</style>
+</head>
+
+<body>
+<div class="sticky">
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="page2.html">About Us...</a>
+	<a href="page4.html">Resources</a>
+	<a href="page5.html">Contact us!</a>
+    <a href="page3.html">The Blog...</a>
+  </div>
+</div>
+
+<div class="header">
+  <h1><em>Contact us!</em></h1>
+</div>
+<blockquote>
+  <h2> <em> Please let us know how we can improve or what additional information you would like to see!</em></h2>
+</blockquote>
+<table id="addresses">
+<tr>
+	<th>Email:</th>
+</tr>
+<tr>
+	<td><a href="mailto:info@senseandedibility.com? subject=Info Request">info@senseandedibility.com</a></td>
+</tr>
+<tr>
+	<td><a href="mailto:info@senseandedibility.com? subject=Info Request">info@senseandedibility.com</a></td>
+</tr>
+<tr>
+	<td><a href="mailto:info@senseandedibility.com? subject=Info Request">info@senseandedibility.com</a></td>
+</tr>
+	</table>
+<blockquote>
+  <h2><em>Would you like to send us promotional products?</em></h2>
+</blockquote>
+<table id="addresses">
+  <tr>
+	<th>Mailing Address:</th>
+</tr>
+<tr>
+	<td>1234 Your St. Middle-Town, ST. 09876</td>
+</tr>
+</table>
+
+<div class="footer">
+  <h3>&copy Hector A. Rivera</h3>
+</div>
+</body>
+</html>
