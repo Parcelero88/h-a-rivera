@@ -1,39 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-<title>Trying New Things</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trying New Things</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: auto;
-  background-image: url("https://user-images.githubusercontent.com/112039559/193478984-cd0edfcc-bdb2-452b-afc2-ed97f62b6065.jpg");
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-div {
-  width: 1500px;
-  border: 5px black;
-  padding: 15px;
-  margin: auto;
-}
+	* {box-sizing: border-box;}
+	body {margin: 0;
+  	background-image: url("images/beach_trimmed.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	font-family:Arial;
+  	font-size: 16px;}
+	div {width: auto; border: 5px #000000; padding: 5px}
 .header {
-  background-color: SlateGray;
-  padding: 20px;
-  text-align: center;
-}
-.topnav {
-  overflow: hidden;
-  background-color: black;
-  font-weight: bold;
-  margin: auto;
-  position: sticky;
-}
+	text-align: center;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;}
+.topnav {overflow: hidden;
+	background-color: #000000;
+	margin: auto;
+	position: sticky;}
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: Gray;
   text-align: center;
@@ -48,136 +40,98 @@ div {
   background-color: SlateGray;
   color: black;
 }
-.column.side {
-  float: left;
-  width: 20%;
+.row {
+  display: -webkit-flex;
+  display: flex;
 }
-.column.middle {
-  float: left;
-  width: 60%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: auto;
+  width: 600px
+  background-color: white;
+  font-size: 60px;
+	}
+@media screen and (max-width : 1157px ){
   .column.side, .column.middle {
     width: 100%;
-  }
+}
 }
 .footer{
-  background-color: SlateGray;
   text-align: right;
   padding: 5px;
+  color: #FF0004;
 }
+.box {
+    margin-bottom: 10px;
+    padding: 0 0 15px;
+    width: 250px;
+	background-color: white;
+    font-size: 60px;
+ }
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 5px;
+  font-family: Arial;
 }
 p {
-  background-color: White;
+  font-family: Arial;
+  background-color: white;
+  padding: 5px;
 }
 h1 {
-  font-size: 36px;
-  background-color: Slategray;
+  font-size: 75px;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
 h2 {
   font-size: 30px;
   background-color: Slategray;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
 h3 {
   font-size: 24px;
-  background-color: Slategray;
+  background-color: black;
+  font-family: "Script MT Bold", Papyrus, Parchment;
 }
-img {
-  height: 50%;
-  width: 50%;
-  image-align: center;
-}
+.image {align: center;
+	}
 </style>
 </head>
-<body>
-<div>
 
+<body>
 <div class="sticky">
   <div class="topnav">
     <a href="index.html">Home</a>
-    <a href="page2.html">1st post</a>
-    <a href="page3.html">Coming Soon</a>
+    <a href="page2.html">About Us...</a>
+	<a href="page4.html">Resources</a>
+	<a href="page5.html">Contact us!</a>
+    <a href="page3.html">The Blog...</a>
   </div>
 </div>
 
-  <div class="header">
-    <h1>How it all ended...Or started?</h1>
-  </div>
-
-<p style="background-color:WhiteSmoke, padding: 5px;">
-As I prepared for a deployment to Iraq, I expected the Army to hand over a decision.  I would either compete for <i><b>promotion</i></b> or would have to <i><b>retire</i></b>...
-</p>
-
-<img src="images\mascal2017.jpg" alt="Mass Casualty Exercise"</img src>
-<h2>The Army's version of a "Pink Slip"</h2>
-<p>It was early 2017, and after serving 24 years, being a soldier was my profession. I gave my very best to taking care of my team and the mission, but I knew that at some point it had to end. Shortly after my arrival to a contingency mission in Iraq, I learned that I would retire in April of 2019.  The Army's version of higher tenure, a "move up or move out" type policy applied to me.  I returned home after a 10-month tour and hoped to begin my transition to civilian life.</p>
-<img src="images\backhome.jpg" alt="Welcome Home 2017" style="width:500px;height:auto;"</img src>
-<p>Time seemed to move at an accelerated pace as I tried to wrap my mind around all of the things I needed to accomplish.  Navigating the job application process was a nightmare and I was quickly overwhelmed by the many differences between the Army and corporate America.  Some of the tasks I had to complete included:
-  <button type="button" onclick="myFunction()">Click to see mandatory tasks</button>
-  <script>
-  function myFunction() {
-    document.getElementById("mandatory").inner.HTML = "#mandatory";
-  }
-  </script>
-  <ul>
-    <li><div class=#mandatory>Complete all virtual <i>"Soldier for Life-Transition Assistance Program"</i> or <i>SFL-TAP</i></div></li>
-    <li><div class=#mandatory>Complete all the 1-week resident SFL-TAP</div></li>
-    <li><div class=#mandatory>Close out all pending administrative personnel review for my subordinate leaders</div></li>
-    <li style="background-color: WhiteSmoke">Apply for US Department of Veterans Affairs disability evaluation</li>
-    <li style="background-color: WhiteSmoke">Help my replacement tranistion into my soon to be vacant position</li>
-  </ul>
-</p>
-
-<h2>Helping Hands = Peace of Mind</h2>
-<p>Thankfully, I found <strong>free resources</strong> that gave me tools to help my voyage.  An early stop was at the USO's Pathfinder Program.  The transition specialist sent me home with a binder full of information.</p>
-<p>The Pathfinder Program was the key to unlock what seemed to be and endless list of powerful partners who were dedicated to helping service members complete a successful transition.  The ones I found most helpful were:</p>
-
-<h2>Free Resources!</h2>
-<table style="width:75%;background-color:WhiteSmoke;align:center;">
-  <tr>
-    <th>Organization</th>
-    <th>Web Address</>
-  </tr>
-  <tr>
-    <td>American Corporate Patners</td>
-    <td><a href="https://www.acp-usa.org/">acp-usa.org</a></td>
-  </tr>
-  <tr>
-    <td>Hire Heroes USA</td>
-    <td><a href="https://www.hireheroesusa.org/job-seekers/">hireheroesusa.org</a></td>
-  </tr>
-    <td>Veterati</td>
-    <td><a href="https://www.veterati.com/">veterati.com</a></td>
-  <tr>
-    <td>Hire Our Heroes</td>
-    <td><a href="https://hireourheroes.org/">hireourheroes.org</a></td>
-  <tr>
-    <td>Texas Workforce Commission</<td>
-    <td><a href="https://www.twc.texas.gov/">twc.texas.gov</a></td>
-  </tr>
-</table>
-
-<h2>What They Did For Me</h2>
-<p>The agencies and organizations listed above provided excellent resources for free.  One organization took all performance evaluations and military award citations and converted it to a resume!  Others paired me with mentors - people with like backgrounds or working in the field I was interesting in joining.  They spent hours helping me understand what was missing from my resume and why.  They shared their own scary stories and encouraged me to trust in myself and the process.</p>
-
-<h2>Punched in the gut...</h2>
-<p>Ultimately, it came down to the wire after over 26 years of being employed full-time, I found myself applying for unemployment benefits.  Nevertheless, I continued to interview for jobs.</p>
-
-<h2>Success!</h2>
-<p>The transition process was still the scariest part of my adult life, and while it did not happen on my schedule, I found an amazing opportunity in the city where we wanted to relocate to .  With the help of my family and the amazing staff from the groups listed above, I successfully started my post-Army life.  Join me next week as I continue to share the laughs and tears of my transition story.</p>
+<div class="header">
+  <h1><em>About Us...</em></h1>
 </div>
+<blockquote>
+  <h2> <em> <strong>Hi, I'm Hector...</strong></em></h2>
+</blockquote>
+<blockquote>
+  <p>. . . and this is my crew.</p>
+  <img src="images/SATX.jpg" width="1000" height="486" alt="First SATX Outing" class="center">
+  <p>I am a husband, father, and veteran.  I am a native of Puerto Rico and joined the US Army in 1993, serving on active duty for 26 years.  After retirement, my family and I moved to San Antonio, Texas looking for a place to finally grow roots.  This is the space where I will tell you what new things I'm trying and how they worked out for me.  It will be a theme-less journey because I now have the ability and flexibility to do pretty much anything.  Having served for as long as I did, I am in tune with the challenges faced by both the service member and their immediate family.  I hope to share what has worked of us and help your transition go smoother than mine.</p></blockquote>
+
+<blockquote>
+  <p><strong><em>You can reach me at <a href="mailto:info@senseandedibility.com? subject=Info Request">info@senseandedibility.com</a>!</em></strong></p>
+</blockquote>
+<blockquote>
+  <h2><em>Glad you are here to share in the adventures!</em></h2>
+</blockquote>
 <div class="footer">
-  <p style= "background-color: SlateGray">&copy Hector A. Rivera</p>
+  <h3>&copy Hector A. Rivera</h3>
 </div>
 </body>
 </html>
